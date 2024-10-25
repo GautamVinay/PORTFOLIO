@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale01.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/45de7cf72f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div claass="container">
+        <nav>
+            <img src="images/pic5.jpg" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Student / Upcoming Designer</p>
+            <h1>Hello, I'm <span>Gautam</span>Vinay</h1>
+            <img src="images/pic11.jpg" class="logo2">
+        </div>
+    </div>
+</div>
+<!---------------------about------------------------>
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="About-col-1">
+                <img src="images/pic13.jpg">
+            </div>
+            <div class="About-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <h2>I am currently a First Year Engineering Student, and ever since I was a child I’ve been fascinated by how technology shapes our world. This curiosity has led me to pursue a degree in Computer Engineering.
+                   Although I’m just beginning my academic journey I'm keenly interested in the world of technology and development.  I’m eager to dive deep into the principles of digital systems,
+                    programming, and electronics. Outside of academics, I enjoy playing Cricket, Badminton, Chess and Video Games which often inspire me to think 
+                    creatively and approach problems from different angles. As I continue to learn and grow, I’m looking forward to connecting with fellow students, 
+                    professors, and professionals in the field.
+                </h2>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Experience">
+                    <ul>
+                        <li><span>HTML</span><br>Information Website Based on the Solar System</li>
+                        <br><li><span>PYTHON</span><br>Login Page Project based on Tkinker and DBMS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2024-Present</span><br>S.R.M. Institute of Technology, Chennai</li>
+                        <br><li><span>2022-2024</span><br>Alphonsa English Medium School, Kerala</li>
+                        <br><li><span>2012-2022</span><br>Delhi Public School, Kuwait </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------Skills--------------------------------->
+<div id="Skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+            <div>
+                <i class='fab fa-python' style='font-size:50px'></i>
+                <h2>PYTHON</h2>
+                <p>I'm familiar with foundational concepts and constructs of the language
+                    and also am experienced with slightly advanced concepts </p>
+                <h3 ><br>50% Experience</h3>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5" style='font-size:50px'></i>
+                <h2>HTML</h2>
+                <p>I'm experienced with basics concepts of website development by the usage of
+                    HTML in a simple and plain manner.</p>
+                <h3><br>20% Experience</h3>
+            </div>
+            <div>
+                <i class="fa-solid fa-c" style="font-size:50px"></i>
+                <h2>C/C++</h2>
+                <p>I'm  just starting to learn this foundational programming languages
+                    and  quickly gaining experience</p>
+                <h3><br> 10% Experience</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------contact---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>gautamv2006@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9037395770</p>
+                <div class="social-icons">
+                    <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/gautam_2113/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100070102134105"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/GautamVinay"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.threads.net/@gautam_2113"><i class="fa-brands fa-threads"></i></a>                </div>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="You Message"></textarea>  
+                    <button type="submit" class="btn btn2">SUBMIT</button>        
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i>  Copyright @Gautam Vinay</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzF36f0-q80_pIAS_uHtLwdq2RM3NYf5_X4GVAa8STuj8Ur3E_dzhgBJ4OPjOgux1pS/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },1500)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
+
